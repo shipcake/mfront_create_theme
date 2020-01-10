@@ -1,0 +1,29 @@
+.footer_mdbicon {
+    color: white;
+    text-align: center;
+}
+
+.footer_mdbicon:hover {
+    color: #f5dfef;
+}
+
+#footer_container {
+    /** container */
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    text-align: left;
+}
+
+#footer_container_copyright {
+    /** copyright */
+    padding: 10px;
+    color: white;
+    background-color: #171717;
+}
