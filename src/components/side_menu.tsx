@@ -9,16 +9,16 @@ const Side_Menu = () => {
             <Head>
                 <link rel="stylesheet" type="text/css" href="theme/side_menu.css" />
             </Head>
-            <div className=" #eeeeee grey lighten-2  p-3"> <h5> ALL CATEGORIES</h5></div>
+            <div id="side_menu_header"> <h5> ALL CATEGORIES</h5></div>
             {Side_menu_data.map((v, i) => (
                 <>
                     <a style={{ color: "#747373" }}>
-                        <div id="side_menu_group" className=" pl-3 pt-3 pb-2" key={i}><b><h6> {v.name} </h6> </b></div>
+                        <div id="side_menu_group" className=" " key={i}><b><h6> {v.name} </h6> </b></div>
                     </a>
 
                     {v.data.map((o, i2) => (
                         <a style={{ color: "#747373" }}>
-                            <div id="side_menu_cate" className="  pl-4 pt-2 pb-2" key={i2}> {o.name}</div>
+                            <div id="side_menu_cate" className=" " key={i2}> {o.name}</div>
                         </a>
                     )
                     )}

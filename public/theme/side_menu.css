@@ -1,29 +1,40 @@
 /** side menu */
+
+#side_menu_header {
+    background-color: #eeeeee;
+    padding: 3px;
+}
+
 #side_menu_group {
-    color:white;
+    color: white;
     background-color: #424242;
 }
+
 #side_menu_group:hover {
     background-color: #616161;
 }
+
 #side_menu_group_active {
-    color:white;
+    color: white;
     background-color: #59698d;
 }
+
 #side_menu_group_active:hover {
     background-color: #1c2a48;
 }
 
-
 #side_menu_cate {
     background-color: #fafafa;
 }
+
 #side_menu_cate:hover {
     background-color: #efebe9;
 }
+
 #side_menu_cate_active {
     background-color: #5d4037;
 }
+
 #side_menu_cate_active:hover {
     background-color: #6d4c41;
 }
