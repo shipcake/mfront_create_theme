@@ -1,0 +1,8 @@
+#update v.1 14/1/2020
+-เพิ่ม .footer_tems สำหรับไอเท็มใน content ของ footer (footer component)
+-เพิ่ม #prod_desc_btn_addtocart เป็นปุ่มเพิ่มเข้าตระกร้าสินค้าในหน้ารายละเอียดสินค้า (product description page)
+-เพิ่ม #side_menu_header_content ส่วนหัวของเมนูด้านซ้าย (side menu component)
+-เพิ่ม .top_menu_navbar_item สำหรับไอเท็มใน content ของเมนูด้านบน (top menu component)
+-แก้ไขให้เมนูด้านซ้ายสามารถคลิ๊กได้ โดยสามารถใช้คำสั่งต่อท้ายด้วย _active ในขณะที่เมนูนั้นๆถูกใช้งาน (side menu component)
+----breaking change
+-ในการเรียกรูปสำหรับในไฟล์ css จะถูกย้ายโฟลเดอร์จากเดิม public->theme->[file/images] เป็น public->api->theme->[file/images] ในการเรียกใช้งานรูปภาพในไฟล์ .css ควรใช้คำสั่ง /api/theme/xx.[jpg/png etc...]
