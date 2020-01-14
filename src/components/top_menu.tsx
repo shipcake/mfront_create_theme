@@ -19,7 +19,7 @@ const Top_menu_comp = () => {
     return (
         <>
             <Head>
-                <link rel="stylesheet" type="text/css" href="theme/header.css" />
+                <link rel="stylesheet" type="text/css" href="api/theme/header.css" />
             </Head>
             <MDBNavbar id="top_menu_navbar" dark expand="md">
                 <MDBNavbarBrand>
@@ -27,7 +27,7 @@ const Top_menu_comp = () => {
                 </MDBNavbarBrand>
                 <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
                     <MDBNavbarNav left>
-                        <MDBNavItem>
+                        <MDBNavItem className="top_menu_navbar_item">
                             Home
                         </MDBNavItem>
                     </MDBNavbarNav>

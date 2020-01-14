@@ -39,8 +39,8 @@ const Product_page = (props) => {
         <>
             <Head>
                 <title>description</title>
-                <link rel="stylesheet" type="text/css" href="theme/product_detail.css" />
-                <link rel="stylesheet" type="text/css" href="theme/body.css" />
+                <link rel="stylesheet" type="text/css" href="api/theme/product_detail.css" />
+                <link rel="stylesheet" type="text/css" href="api/theme/body.css" />
             </Head>
             <Top_menu_comp />
 
@@ -83,7 +83,7 @@ const Product_page = (props) => {
                                 </MDBCol>
                             </MDBCol>
 
-                            <MDBCol_s lg="5" md="5" className="pt-3">
+                            <MDBCol lg="5" md="5" className="pt-3">
                                 { /* short desciption */}
                                 <MDBRow>
                                     <MDBCol><div id="prod_desc_shortdesc">{data.shortdescription}</div></MDBCol>
@@ -106,48 +106,54 @@ const Product_page = (props) => {
                                     <MDBCol>{data.includevat ? <div style={{ color: '#2e7d32' }}>ราคานี้รวมภาษีมูลค่าเพิ่มแล้ว</div> : <div style={{ color: '#c62828' }}>ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม</div>}</MDBCol>
                                 </MDBRow>
 
-                            </MDBCol_s>
-                        </MDBRow>
+                                {/* add to cart */}
+                                <MDBRow>
+                                    <MDBCol size="4" className="p-2">
+                                        <input type="number" step="1" min="1" max="99" className="form-control w-1" style={{ width: '70px' }} />
+                                    </MDBCol>
 
-                        {/* description section */}
-                        <MDBRow>
-                            <MDBCol className="p-0" md="2" onClick={() => setattributesection('description')} selected={attributesection == 'description'}>
-                                <div id={attributesection == 'description' ? 'prod_desc_titledesc_frame_active' : 'prod_desc_titledesc_frame_inactive'} className="prod_desc_titledesc_frame">
-                                    <h5>รายละเอียด</h5>
-                                </div>
+                                    <MDBCol>
+                                        <div id="prod_desc_btn_addtocart"> ลงตระกร้า</div>
+                                    </MDBCol>
+                                </MDBRow>
 
                             </MDBCol>
-
-
-                            <MDBCol className="p-0" md="2" onClick={() => setattributesection('attribute')}>
-                                <div id={attributesection == 'attribute' ? 'prod_desc_titledesc_frame_active' : 'prod_desc_titledesc_frame_inactive'} className="prod_desc_titledesc_frame">
-                                    <h5>คุณสมบัติ</h5>
-                                </div>
-                            </MDBCol>
-
-                            <Title_description_line />
                         </MDBRow>
+
+                            {/* description section */}
+                            <MDBRow>
+                                <MDBCol className="p-0" md="2" onClick={() => setattributesection('description')} selected={attributesection == 'description'}>
+                                    <div id={attributesection == 'description' ? 'prod_desc_titledesc_frame_active' : 'prod_desc_titledesc_frame_inactive'} className="prod_desc_titledesc_frame">
+                                        <h5>รายละเอียด</h5>
+                                    </div>
+
+                                </MDBCol>
+
+
+                                <MDBCol className="p-0" md="2" onClick={() => setattributesection('attribute')}>
+                                    <div id={attributesection == 'attribute' ? 'prod_desc_titledesc_frame_active' : 'prod_desc_titledesc_frame_inactive'} className="prod_desc_titledesc_frame">
+                                        <h5>คุณสมบัติ</h5>
+                                    </div>
+                                </MDBCol>
+
+                                <Title_description_line />
+                            </MDBRow>
 
                     </MDBCol>
                 </MDBRow>
             </Container_Layout>
-            <Footer />
+                <Footer />
         </>
-    )
-}
-
-Product_page.getInitialProps = ({ query }) => {
-    return { id: query.id }
-}
-export default Product_page
-
-const MDBCol_s = styled(MDBCol)`
-    font-size:16px;
-    padding-top:10px;
-`
-
-
-const Title_description_line = styled(MDBCol)`
-border-bottom: 2px dotted #ec407a;
-line-height: 1.1;
+            )
+        }
+        
+Product_page.getInitialProps = ({query}) => {
+    return {id: query.id }
+        }
+        export default Product_page
+        
+        
+        const Title_description_line = styled(MDBCol)`
+        border-bottom: 2px dotted #ec407a;
+        line-height: 1.1;
 `

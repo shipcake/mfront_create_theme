@@ -49,7 +49,7 @@ const Card_product = ({ data }: Card_Type) => {
 
         <div className="prod_card_frame m-1">
             <Head>
-                <link rel="stylesheet" type="text/css" href="theme/product_card.css" />
+                <link rel="stylesheet" type="text/css" href="api/theme/product_card.css" />
             </Head>
             <>
                 {/* content */}
@@ -75,7 +75,9 @@ const Card_product = ({ data }: Card_Type) => {
                 {/* button */}
                 <div className="prod_card_container">
 
-                    <div className="prod_card_btn_buy p-2"><div className="d-flex justify-content-center"> สั่งซื้อ</div></div>
+                    <div className="prod_card_btn_buy_frame">
+                        <div className="prod_card_btn_buy">สั่งซื้อ</div>
+                    </div>
 
                 </div>
             </>
