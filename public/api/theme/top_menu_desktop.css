@@ -1,0 +1,150 @@
+#top_menu_container {
+    background-color: red;
+    padding: 5px;
+    width: 100%;
+}
+
+.top_menu {
+    /** container of items */
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+}
+
+.top_menu:hover .top_menu_content {
+    /** when mouse hover top_menu_content unlock display show dropdown content */
+    display: block;
+}
+
+.top_menu:hover .top_menu_btn {
+    /** when mouse top_menu_btn hover btn change color */
+    background-color: steelblue;
+}
+
+.top_menu_btn {
+    /** btn */
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+.top_menu_content {
+    /** dropdown container */
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 180px;
+}
+
+.top_menu_content a {
+    /** dropdown item style */
+    color: chocolate;
+    display: block;
+    padding: 10px;
+}
+
+.top_menu_content a:hover {
+    /** when mouse over into item of dropdown change item color */
+    background-color: violet;
+}
+
+.top_menu_member_container {
+    /** member container (right section container) */
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+}
+
+.top_menu_member_item {
+    /** member (right section) */
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-right: 5px;
+    align-self: center;
+}
+
+#top_menu_search_container {
+    margin: 5px;
+}
+
+#top_menu_search_input {
+    /** search input (right section) */
+    background-color: #f7b6d1;
+    padding: 5px;
+    border: none;
+}
+
+#top_menu_search_input:focus {
+    /** search input (right section) */
+    color: white;
+    outline: none;
+}
+
+#top_menu_member_item_cart_badge {
+    /** shopping cart badge (right section) */
+    color: white;
+    align-self: center;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: #e57399;
+}
+
+#top_menu_member_item_cart {
+    /** cart icon (right section) */
+    color: deeppink;
+}
+
+#top_menu_member_item_cart:hover {
+    /** cart icon hover (right section) */
+    color: palevioletred;
+}
+
+/** stack in dropdown */
+
+.top_menu_btn_stack {
+    /* background-color: blue; */
+    color: chocolate;
+    padding: 10px;
+    border: none;
+}
+
+.top_menu_stack {
+    position: relative;
+    display: inline-block;
+}
+
+.top_menu_stack:hover .top_menu_content_stack {
+    display: block;
+}
+
+.top_menu_stack:hover .top_menu_btn_stack {
+    /** btn change color in hover (stack) */
+    background-color: violet;
+}
+
+.top_menu_content_stack {
+    /** stack content */
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    background-color: red;
+    width: 200px;
+}
+
+.top_menu_content_stack a {
+    /** list of stack content */
+    /** dropdown item style (stack) */
+    display: block;
+    padding: 10px;
+}
+
+.top_menu_content_stack a:hover {
+    /** when mouse over into item of dropdown change item color (stack) */
+    background-color: blue;
+}
+

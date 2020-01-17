@@ -42,7 +42,7 @@ const Footer = () => {
                         <MDBCol size="12" md="6" sm="12" lg="2">
                             <div className="footer_items">
                                 <Link href="https://goo.gl/maps/82xCg1nxDvvM1dzY7" >
-                                    <a target="_blank" style={{ color: 'white' }}>
+                                    <a target="_blank">
                                         <MDBIcon id="footer_mdbicon" className="lign-middle" icon="map-marker" size='2x' /> บริษัท โมเดิร์นเซฟ อินเตอร์เทรด จำกัด
                             </a>
                                 </Link>

@@ -1,6 +1,7 @@
 #prod_desc_crumb {
     /** breadbrumb */
-    background-color: #f48fb1;
+    /* background-color: #f48fb1; */
+    background-color: #f399c1;
     color: white;
 }
 
@@ -54,12 +55,13 @@
 
 #prod_desc_titledesc_frame_inactive {
     /** not active */
-    background-color: #ec407a;
+    background-color: #f399c1;
     
 }
 #prod_desc_titledesc_frame_active {
     /** activited */
-    background-color: #780427;
+    background:linear-gradient(90deg, rgba(214,109,117,1) 0%, rgba(226,149,135,1) 100%);
+    
 }
 
 /* #prod_desc_titledesc_frame_active:hover {

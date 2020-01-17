@@ -1,40 +1,45 @@
 /** side menu */
-
 #side_menu_header {
-    background-color: #eeeeee;
-    padding: 3px;
+    color: #744c28;
+    background-color: #f9cbdf;
+    padding: 15px;
+    text-align: center;
+    font-size: 24pt;
+   
 }
 
 #side_menu_group {
-    color: white;
-    background-color: #424242;
+    color:white;
+    background-color: #f399c1;
+    background-image: url("/api/theme/images/pink.png");
+    background-size: 224.5px 40px;
+    background-repeat: repeat-x;
+    padding:12px;
+    
 }
-
 #side_menu_group:hover {
-    background-color: #616161;
+    background-color: #f399c1 ;
+    
 }
-
 #side_menu_group_active {
-    color: white;
-    background-color: #59698d;
+    color:#f399c1;
+    background-color: #fce4ee;
+}
+#side_menu_group_active:hover {
+    background-color: #f9cbdf;
 }
 
-#side_menu_group_active:hover {
-    background-color: #1c2a48;
-}
 
 #side_menu_cate {
-    background-color: #fafafa;
+    background-color: #fce4ee;
+    padding: 10px;
 }
-
 #side_menu_cate:hover {
-    background-color: #efebe9;
+    background-color: #f9cbdf;
 }
-
 #side_menu_cate_active {
-    background-color: #5d4037;
+    background-color: red;
 }
-
 #side_menu_cate_active:hover {
-    background-color: #6d4c41;
+    background-color: red;
 }

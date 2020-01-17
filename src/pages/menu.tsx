@@ -8,12 +8,12 @@ import Top_menu_data from '../lib/top_menu_data'
 import AnimateHeight from 'react-animate-height'
 import { MDBRow, MDBCol } from 'mdbreact'
 
-const Top_menu_comp = () => {
+const Menu_test = () => {
     return (
         <>
             <Head>
-                <link rel="stylesheet" type="text/css" href="/api/theme/top_menu_desktop.css" />
-                <link rel="stylesheet" type="text/css" href="/api/theme/top_menu_mobile.css" />
+                <link rel="stylesheet" type="text/css" href="/testmenu.css" />
+                <link rel="stylesheet" type="text/css" href="/testmenu_mobile.css" />
             </Head>
             <div id="top_menu_container" className="d-none d-md-block">
                 <MDBRow className="m-0">
@@ -87,12 +87,12 @@ const Top_menu_comp = () => {
             </div>
 
             {/* mobile menu */}
-            <Top_Menu_Mobile_comp />
+            <Menu_test_mobile_component />
         </>
     )
 }
 
-const Top_Menu_Mobile_comp = () => {
+const Menu_test_mobile_component = () => {
     const [isOpen, setisOpen] = useState(false) /** open toggle mobile */
     const [isOpenIDLv0, setisOpenIDLv0] = useState('') /** keep clicked id level 0*/
     const [isOpenIDLv1, setisOpenIDLv1] = useState('') /** keep clicked id level 1*/
@@ -171,4 +171,4 @@ const Top_Menu_Mobile_comp = () => {
     )
 }
 
-export default Top_menu_comp
+export default Menu_test

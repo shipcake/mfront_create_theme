@@ -2,14 +2,21 @@
     color: white;
     text-align: center;
 }
-
+ 
 .footer_mdbicon:hover {
     color: #f5dfef;
 }
 
+.footer_items{
+    background-color: red;
+    border-radius: 10px;
+    padding:10px;
+    /* margin:10px; */
+}
+
 #footer_container {
     /** container */
-    color: white;
+    color: #e6e7e8;
     text-align: center;
     position: relative;
     bottom: 0;
@@ -17,13 +24,16 @@
     padding-bottom: 50px;
     width: 100%;
     height: auto;
-    background-color: #292929;
+    background-color: #f6b2cf;
     text-align: left;
+    background-image: url("/api/theme/images/foot.jpg");
+    background-repeat: repeat-x;
+    background-size: 1048px 150px;
 }
 
 #footer_container_copyright {
     /** copyright */
     padding: 10px;
     color: white;
-    background-color: #171717;
+    background-color: #f399c1;
 }

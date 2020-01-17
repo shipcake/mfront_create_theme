@@ -1,0 +1,108 @@
+/** mobile */
+
+#top_menu_mobile_container {
+    background-color: burlywood;
+    padding: 5px;
+    width: 100%;
+}
+
+#top_menu_content_mobile_toggle {
+    /** normal close btn icon */
+    color: white;
+    transition: all 0.5s ease;
+    transform: rotate(0deg);
+}
+
+#top_menu_content_mobile_toggle_active {
+    /** active btn icon */
+    transition: all 0.5s ease;
+    transform: rotate(360deg);
+    color: #b81f1f;
+}
+
+.top_menu_mobile {
+    position: relative;
+    display: block;
+}
+
+.top_menu_mobile_btn {
+    /** main button (mobile) */
+    padding: 10px;
+    margin: 2px;
+    border: none;
+    color: white;
+    width: 100%;
+    background-color: green;
+}
+
+.top_menu_mobile_content {
+    /** dropdown container (mobile) */
+    display: block;
+    background-color: indigo;
+    padding: 5px;
+    width: 100%;
+}
+
+
+.top_menu_mobile_content_stack {
+    /** stack content (mobile) */
+    display: block;
+    position: relative;
+    background-color: beige;
+}
+
+.top_menu_mobile_content_stack a {
+    /** list of stack content (mobile) */
+    /** dropdown item style (stack) (mobile) */
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.top_menu_mobile_stack {
+    /** dropdown level 1 */
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.top_menu_mobile_stack_active {
+    /** dropdown level 1 is active */
+    position: relative;
+    display: block;
+    padding: 10px;
+    background-color: yellow;
+}
+
+#top_menu_mobile_search_container {
+    /** search container */
+    background-color: coral;
+}
+
+#top_menu_mobile_search_input {
+    /** search input box (mobile) */
+    background-color: #f7b6d1;
+    padding: 5px;
+    margin:5px;
+    border: none;
+}
+
+#top_menu_mobile_search_input:focus {
+      /** search input box on focus (mobile) */
+    color: white;
+}
+
+#top_menu_mobile_member_item_cart {
+    /** cart container */
+    background-color: turquoise;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+#top_menu_mobile_member_item_cart_icon {
+    /** cart icon */
+    color:red
+}
