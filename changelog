@@ -1,0 +1,23 @@
+#update v.2 17/1/2020
+-เปลี่ยน top menu ใหม่ สามารถ style ได้ทั้ง desktop และ mobile ไฟล์ .css จะถูกแยกกันในชื่อ top_menu_desktop.css และ top_menu_mobile.css ในโฟลเดอร์ public/api/theme
+
+-ห้ามเปลี่ยนแปลงแก้ไข className
+----.top_menu
+----.top_mobile_menu
+----.top_menu:hover
+----.top_menu_content
+
+-ห้ามเปลี่ยนแปลงคำสั่ง position เช่น position: absolute; position: relative;
+-ห้ามเปลี่ยนแปลงตำสั่ง display เฃ่น  display: inline-block;  display: flex;  display: none; และคำสั่งที่เกี่ยวข้องอย่าง flex-direction: row-reverse;
+
+-top menu จะมี 2 level ได้แก่ level 0 และ 1 design style อย่างระมัดระวัง โดย level 1 dropdown จะมีคำลงท้ายว่า _stack และ stack_active สำหรับเมนูที่ถูกใช้งาน
+
+--------------------------------
+#update v.1 14/1/2020
+-เพิ่ม .footer_tems สำหรับไอเท็มใน content ของ footer (footer component)
+-เพิ่ม #prod_desc_btn_addtocart เป็นปุ่มเพิ่มเข้าตระกร้าสินค้าในหน้ารายละเอียดสินค้า (product description page)
+-เพิ่ม #side_menu_header_content ส่วนหัวของเมนูด้านซ้าย (side menu component)
+-เพิ่ม .top_menu_navbar_item สำหรับไอเท็มใน content ของเมนูด้านบน (top menu component)
+-แก้ไขให้เมนูด้านซ้ายสามารถคลิ๊กได้ โดยสามารถใช้คำสั่งต่อท้ายด้วย _active ในขณะที่เมนูนั้นๆถูกใช้งาน (side menu component)
+----breaking change
+-ในการเรียกรูปสำหรับในไฟล์ css จะถูกย้ายโฟลเดอร์จากเดิม public->theme->[file/images] เป็น public->api->theme->[file/images] ในการเรียกใช้งานรูปภาพในไฟล์ .css ควรใช้คำสั่ง /api/theme/xx.[jpg/png etc...]
